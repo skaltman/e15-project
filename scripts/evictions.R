@@ -1,6 +1,7 @@
-#
+# Reads in, wrangles, writes out data on evictions in South Carolina cities in
+# 2016
 
-# Author: Name
+# Author: Sara Altman
 # Version: 2020-01-23
 
 # Libraries
@@ -30,7 +31,7 @@ file_raw %>%
         evictions = col_double()
       )
   ) %>%
-  filter(year == YEAR_MIN) %>%
+  filter(year == YEAR) %>%
   rename(geoid = GEOID) %>%
   write_rds(file_out)
 

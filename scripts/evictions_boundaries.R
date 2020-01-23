@@ -1,4 +1,4 @@
-# Description
+# Joins boundary and evictions data for South Carolina cities in 2016
 
 # Author: Sara Altman
 # Version: 2020-01-23

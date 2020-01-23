@@ -1,4 +1,6 @@
-# Description
+# Reads in, manipulates, and writes out South Carolina city boundary data
+
+# Source: https://data-downloads.evictionlab.org/
 
 # Author: Sara Altman
 # Version: 2020-01-23
