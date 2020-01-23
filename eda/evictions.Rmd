@@ -1,0 +1,32 @@
+---
+title: South Carolina evictions
+author: Sara Altman
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Libraries
+library(tidyverse)
+
+# Parameters
+file_data <- here::here("data/evictions.rds")
+#===============================================================================
+
+df <- read_rds(file_data)
+```
+
+## Which city had the most evictions in 2016?
+
+```{r}
+df %>% 
+  top_n(1, wt = evictions)
+```
+
+North Charleston.
